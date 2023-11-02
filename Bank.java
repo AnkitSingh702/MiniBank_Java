@@ -114,7 +114,7 @@ class SavingAccount extends Account{
     }
 
     double endOfDayBalance(double tempbal,double interestRate){
-        double closingBalance = tempbal+tempbal*interestRate/36500 ;
+        double closingBalance = tempbal+tempbal*interestRate/100 ;
         return closingBalance ;
 
     }
