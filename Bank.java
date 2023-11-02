@@ -25,7 +25,7 @@ public class Bank{
         ex1.printTransaction();
         System.out.println("an example of overdraft withdraw : "+ ex1.withdraw(2000));
 
-        System.out.println("Closing balance is:"+ ex2.endOfDayInterest(ex2.getBalance(),2.0));
+        System.out.println("Closing balance is:"+ ex2.endOfDayBalance(ex2.getBalance(),1.0));
         c1.printCustomerDetails() ;
         c2.printCustomerDetails();
 
@@ -113,7 +113,7 @@ class SavingAccount extends Account{
         this.interestRate = interestRate ;
     }
 
-    double endOfDayInterest(double tempbal,double interestRate){
+    double endOfDayBalance(double tempbal,double interestRate){
         double closingBalance = tempbal+tempbal*interestRate/36500 ;
         return closingBalance ;
 
